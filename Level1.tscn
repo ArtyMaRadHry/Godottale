@@ -1,0 +1,222 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://tileset/environment.tres" type="TileSet" id=1]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
+[ext_resource path="res://player/graphics-sprites-WOAsprite.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 100, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 200, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 300, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 400, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 500, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 600, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 100, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 200, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 300, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 400, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 500, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 600, 300, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 100, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 200, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 300, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 400, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 500, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 600, 200, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 100, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 200, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 300, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 400, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 500, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 600, 100, 100, 100 )
+
+[sub_resource type="SpriteFrames" id=29]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "stand_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "stand_left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "stand_right",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "stand_up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
+"loop": true,
+"name": "walk_down",
+"speed": 7.0
+}, {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
+"loop": true,
+"name": "walk_left",
+"speed": 7.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "walk_right",
+"speed": 7.0
+}, {
+"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"loop": true,
+"name": "walk_up",
+"speed": 7.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=30]
+radius = 15.0
+height = 60.0
+
+[node name="Level1" type="Node2D"]
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -131064, 41, 0, -131059, 48, 0, -131058, 39, 0, -65524, 50, 0, -65519, 53, 0, 65544, 52, 0, 65545, 52, 0, 65548, 42, 0, 65550, 53, 0, 65552, 43, 0, 65553, 42, 0, 65556, 40, 0, 131075, 46, 0, 131080, 52, 0, 131081, 52, 0, 131088, 43, 0, 196609, 24, 0, 196613, 25, 0, 196615, 26, 0, 262147, 45, 0, 262148, 45, 0, 262152, 41, 0, 327682, 43, 0, 327683, 43, 0, 327684, 43, 0, 327685, 52, 0, 327686, 52, 0, 327690, 24, 0, 327692, 25, 0, 327694, 35, 0, 327697, 25, 0, 327699, 26, 0, 327700, 43, 0, 393218, 40, 0, 393235, 43, 0, 393236, 43, 0, 393237, 43, 0, 393238, 43, 0, 458758, 41, 0, 458761, 41, 0, 458764, 43, 0, 458765, 43, 0, 458766, 43, 0, 458767, 43, 0, 458768, 43, 0, 458769, 43, 0, 458770, 43, 0, 458771, 43, 0, 458772, 43, 0, 458773, 43, 0, 458774, 43, 0, 524300, 43, 0, 524301, 43, 0, 524302, 43, 0, 524303, 43, 0, 524304, 43, 0, 524305, 43, 0, 524306, 43, 0, 524307, 43, 0, 524308, 43, 0, 524309, 43, 0, 524310, 43, 0, 589836, 43, 0, 589837, 43, 0, 589838, 43, 0, 589839, 43, 0, 589840, 43, 0, 589841, 43, 0, 589842, 43, 0, 589843, 43, 0, 589844, 43, 0, 589845, 43, 0, 589846, 43, 0, 655362, 43, 0, 655366, 41, 0, 655369, 41, 0, 655372, 43, 0, 655373, 43, 0, 655374, 43, 0, 655375, 43, 0, 655376, 43, 0, 655377, 43, 0, 655378, 43, 0, 655379, 43, 0, 655380, 43, 0, 655381, 43, 0, 655382, 43, 0, 720908, 43, 0, 720909, 43, 0, 720910, 43, 0, 720911, 43, 0, 720912, 43, 0, 720913, 43, 0, 720914, 43, 0, 720915, 43, 0, 720916, 43, 0, 720917, 43, 0, 720918, 43, 0, 851972, 29, 0, 851974, 27, 0, 851976, 27, 0, 851978, 27, 0, 851980, 28, 0 )
+
+[node name="High" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -262137, 32, 0, -262134, 34, 0, -196601, 31, 0, -196598, 30, 0, -65529, 31, 0, -65526, 30, 0, -65517, 31, 0, 65537, 29, 0, 65539, 37, 0, 65540, 38, 0, 65541, 27, 0, 65543, 28, 0, 65546, 30, 0, 65555, 31, 0, 196618, 29, 0, 196620, 27, 0, 196622, 37, 0, 196623, 38, 0, 196624, 37, 0, 196625, 27, 0, 196627, 28, 0, 262158, 36, 0, 786436, 34, 0, 786438, 33, 0, 786440, 33, 0, 786442, 33, 0, 786444, 32, 0 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 300, 0 )
+z_index = 10
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 29 )
+animation = "stand_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 30 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+smoothing_enabled = true
